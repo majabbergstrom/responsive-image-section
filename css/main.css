@@ -24,10 +24,16 @@ body {
   margin: 0;
 }
 
+img {
+  display: block;
+  width: 100%;
+}
+
 section {
   background-color: #e2e2e2;
-vertical-align: middle;
+  vertical-align: middle;
   margin-top: -1.3em;
+  text-align: center;
 }
 
 h1 {
@@ -44,7 +50,10 @@ p {
   margin-top: -1em;
 }
 
-div {
+.section-body {
+  display: inline-block;
+  width: 100%;
+
   text-align: left;
   vertical-align: middle;
 }
@@ -53,6 +62,8 @@ div {
   width: 100%;
   display: block;
   margin-top: 1em;
+  width: 100%;
+  vertical-align: middle;
 }
 
 a {
@@ -66,6 +77,7 @@ a {
   color: #fff;
   padding: 0.5em 0.75em;
   text-decoration: none;
+  margin-left: 1em;
 }
 
 .btn:hover {
@@ -79,8 +91,32 @@ a {
     line-height: 1.4;
   }
 
+  .img-flex {
+    display: inline-block;
+    width: 100%;
+    max-width: 50%;
+    margin-left: 16em;
+    margin-top: -18em;
+  }
+
+  .section-body {
+    display: inline-block;
+    margin-right: 18em;
+    margin-top: -1em;
+    width: 100%;
+    max-width: 50%;
+    text-align: left;
+    vertical-align: middle;
+  }
+
   h1 {
-    margin: 0;
+    padding-bottom: 0;
+    padding-left: 0.7em;
+  }
+
+  section {
+    padding-top: 1em;
+    padding-bottom: 2em;
   }
 
 }
@@ -92,6 +128,25 @@ a {
     line-height: 1.5;
   }
 
+  .img-flex {
+    display: inline-block;
+    margin-top: 0;
+    max-width: 50%;
+    margin-top: -14em;
+    margin-right: -7em;
+  }
+
+  .section-body {
+    padding-left: 1em;
+    margin-left: -7em;
+    padding-top: 2em;
+  }
+
+  p,
+  strong {
+    padding: 1em;
+  }
+
 }
 
 @media only screen and (min-width: 90em) {
@@ -99,6 +154,23 @@ a {
   html {
     font-size: 130%;
     line-height: 1.5;
+  }
+
+  .img-flex {
+    margin-right: -18em;
+    max-width: 25%;
+    padding: 2em;
+  }
+
+  .section-body {
+    padding-left: 1em;
+    margin-left: 2em;
+    margin-top: 0.5em;
+    max-width: 45%;
+  }
+
+  section {
+    padding-right: 1em;
   }
 
 }
